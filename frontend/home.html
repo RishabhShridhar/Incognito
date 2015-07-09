@@ -41,7 +41,7 @@
 
       <!-- Questions List -->
 
-      
+
 
 
       <!--Questions list end-->
@@ -51,12 +51,12 @@
     <div id="trending" class="col s12">
 <!-- Trending Questions -->
 
-      
+
 
     </div>
     <div id="my" class="col s12">
 <!--My Questions -->
-      
+
 
     </div>
   </div>
@@ -69,7 +69,7 @@ var url;
 $(document).ready(function(){
     $('ul.tabs').tabs();
     $(".button-collapse").sideNav();
-    url = "http://127.0.0.1:8080/annonetwork/";
+    url = "http://localhost/annonetwork/backend/";
     var xhr = new XMLHttpRequest({mozSystem:true});
     xhr.open("GET", url+"latest.php", true);
     xhr.onload = addLatest;
@@ -118,14 +118,14 @@ $(document).ready(function(){
     //localStorage.setItem('quesid', tarid.html());
 
    // console.log(tarid.html());
-    
+
    // var xhr4 = new XMLHttpRequest({mozSystem:true});
     //xhr4.open("GET", url + "temp.php?qid="+tarid.html(), false);
    // xhr4.send();
 
     window.location = 'question.html';
    // console.log(localStorage.getItem('quesstat'));
-    
+
   }
 </script>
 <script type="text/javascript" src="js/materialize.min.js"></script>

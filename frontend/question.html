@@ -62,7 +62,7 @@
     //console.log(localStorage.getItem('quesstat'));
     //$('#quesstat').html(localStorage.getItem('quesstat'));
     var xhr4 = new XMLHttpRequest({mozSystem:true});
-    xhr4.open("GET", "http://127.0.0.1:8080/annonetwork/tempget.php", false);
+    xhr4.open("GET", "http://localhost/annonetwork/backend/tempget.php", false);
     xhr4.send();
 
     var myobj = JSON.parse(xhr4.responseText);
